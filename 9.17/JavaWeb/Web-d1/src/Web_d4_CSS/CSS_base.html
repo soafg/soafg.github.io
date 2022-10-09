@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>今天学习基础的CSS</title>
+    <style type="text/css">
+        /*这里被style标签包围可以使用CSS的代码*/
+        /*标签样式表*/
+        p{
+            color: red;
+        }
+        /*标签类样式*/
+        .pp{
+            color:blueviolet;
+            font-size: 20px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: 黑体;
+        }
+        /*ID样式*/
+        /*ID属性在整个HTML文件中尽量保持唯一*/
+        #gg{
+            background-color: pink;
+            color: aqua;
+        }
+        /*组合样式*/
+        div p{
+            color: red;
+        }
+        div .pp{
+            color:blueviolet;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <p>你小子是懂桌球的！！</p>
+  <p class="pp">细狗行不行啊？</p>
+  <p><span id="gg">有操作的捏！！</span></p>
+  <span>还可以哦~~</span>
+  <div>
+    <p>你小子是懂桌球的！！</p>
+    <p>细狗行不行啊？</p>
+</div>
+</body>
+</html>

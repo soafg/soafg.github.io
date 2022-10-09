@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>今天开始学习表单标签</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<form action="Text.html" method="post">
+    干员：<input type="text" name="Operators"> <br/>
+    密码：<input type="password" name="pwd"> <br/>
+    性别：<input type="radio" name="Sex" value="man" >男
+          <input type="radio" name="Sex" value="feman" checked>女 <br/>
+    爱好：  <input type="checkbox" name="Hobby" value="唱" checked> 唱
+            <input type="checkbox" name="Hobby" value="跳"> 跳
+            <input type="checkbox" name="Hobby" value="rap"> rap
+            <input type="checkbox" name="Hobby" value="篮球"> 🏀 <br/>
+    今天迫害谁：
+    <select>
+        <option value="1" selected>杰斯顿</option>
+        <option value="2">屑猫猫</option>
+        <option value="3">W</option>
+        <option value="4">爱国者</option>
+        <option value="5">破坏者</option>
+
+    </select> <br>
+    备注：<br/> <textarea name="remark" rows="4" cols="50"></textarea> <br/>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+    <input type="button" value="我只是一个按钮">
+
+</form>
+
+</body>
+</html>
+
+
+<!--
+1、<form></form> 表单标签 多用于填入信息，传给服务器数据
+                 其中的name属性一定要有值，不然无法传给服务器
+2、<input/> type 选择输入的类型，默认是text文本框,selected表示默认选中该项
+                            password表示密码框
+                            radio表示单选按钮，要注意name值要保持一致才有互斥的效果
+                            checkbox表示复选框，name属性建议一致方便服务器获取值时可以为一个数组
+                            submit表示提交按钮 value值是键上内容
+                            reset表示重置按钮 恢复到默认
+                            button表示普通按钮
+3、select表示下拉列表，每一个选项是option，其中的value值就是发给服务器的值,selected表示默认选中该项
+4、<textarea></textarea>表示多行文本框，可以用作备注，他的value值就开始结束标签之间的内容，所以不要轻易空格。
+5、action表示提交后运行该动作 method表示使用的方法
+                                 post 提交更安全
+                                 get  不安全，信息会被列出
+
+
+
+-->

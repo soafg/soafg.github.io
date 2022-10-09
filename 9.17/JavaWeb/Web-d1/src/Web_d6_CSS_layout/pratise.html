@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>练习：模拟网页布局</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: cadetblue;
+        }
+        #div_top
+        {
+            height: 10%;
+            background: pink;
+        }
+        #div_left
+        {
+            width: 15%;
+            height: 90%;
+            background: coral;
+            float: left;
+        }
+        #div_main
+        {
+            width: 85%;
+            height: 80%;
+            background: aquamarine;
+            float: left;
+        }
+        #div_bottom
+        {
+            height: 10%;
+            float: left;
+            width: 85%;
+            background: chartreuse;
+
+        }
+        #div1{
+            width: 80%;
+            height: 100%;
+            border: red solid 3px;
+            margin-left: 10%;
+            float:left;
+        }
+        div{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+<div id="div_top">Top</div>
+<div id="div_left">Left</div>
+<div id="div_main">Main</div>
+<div id="div_bottom">Bottom</div>
+</div>
+</body>
+</html>
+<!--
+1、在进行网页板块盒子布局可以先草图确定大致定位，使用float：left；能解决大部分有间隙的问题
+2、版本5下height才有效
+-->

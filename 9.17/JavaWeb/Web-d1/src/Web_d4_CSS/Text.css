@@ -1,0 +1,26 @@
+
+ p{
+        color: red;
+        }
+/*标签类样式*/
+.pp{
+    color:blueviolet;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 黑体;
+}
+/*ID样式*/
+/*ID属性在整个HTML文件中尽量保持唯一*/
+#gg{
+    background-color: pink;
+    color: aqua;
+}
+/*组合样式*/
+div p{
+    color: red;
+}
+div .pp{
+    color:blueviolet;
+    font-size: 20px;
+}

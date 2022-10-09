@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>今天学习CSS的布局</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            width: 200px;
+            height: 150px;
+            background: aqua;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        #div2 {
+            width: 200px;
+            height: 150px;
+            background: cornflowerblue;
+            position: relative;
+            float: right;
+        }
+        #div3 {
+             width: 200px;
+             height: 150px;
+             background: pink;
+             position: absolute;
+            left: 200px;
+            top: 200px;
+         }
+        #div4 {
+              width: 100px;
+              height: 75px;
+              background: cornflowerblue;
+              position: relative;
+              float: right;
+          }
+    </style>
+</head>
+<body>
+<div id="div1">盒子一</div>
+<div id="div2">盒子二</div>
+<div id="div3"><div id="div4">盒子四</div></div>
+
+</body>
+</html>
+<!--
+1、position 定位方式 absolute 绝对定位，相当于定义了一个父盒子，默认父盒子是主页面，要确认参数left top
+                    relative 相对定位，要对父盒为参照进行位置改变，一般搭配 float padding margin。。。。
+2、float
+-->

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        #div1{
+            width: 600px;
+            height: 400px;
+            background: antiquewhite;
+            /*border-color: blue; 边框的颜色*/
+            /*border-width:4px ;  边框线的长度*/
+            /*border-style: solid; 边框线的样式*/
+            /*border-top: blue 4px solid; 同理可以对边框的各个边线进行单独操作*/
+            border: 1px blue solid; //可以同时输入盒子边框的有关信息
+        }
+        #div2{
+            width: 225px;/*300-75px*//*要减去padding的部分，下面同理*/
+            height: 150px;/*200-50px*/
+            background: brown;
+            margin: 100px 150px;
+            /*要在边框信息前使用，一个参数：距上和左n个px
+                                两个参数：距上下  、左右n个px
+                                三个参数；距上 、左右、 下n个px
+                                四个参数：距上 、右、 下 、左 n个px*/
+            /*padding 是填充的意思，跟margin参数效果差不多，如果要使第三个盒中盒加入可以在第二个盒子（父）使用padding，不然就在第三个盒子使用margin*/
+            padding-top: 50px;
+            padding-left: 75px;
+            border: 1px red solid; //可以同时输入盒子边框的有关信息
+        }
+        #div3{
+            width: 150px;
+            height: 100px;
+            background: chocolate;
+            /*要在边框信息前使用，一个参数：距上和左n个px
+                                两个参数：距上下  、左右n个px
+                                三个参数；距上 、左右、 下n个px
+                                四个参数：距上 、右、 下 、左 n个px*/
+
+            border: 1px red solid; //可以同时输入盒子边框的有关信息
+
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <div id="div2">
+        <div id="div3">
+            我还要再再嵌入一个盒子
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<!--
+1、padding兼容性  IE浏览器：实际尺寸=width
+                 edge浏览器：实际尺寸=width+两边border-width+padding的长度
+2、CSS盒子模型
+      border 边框
+      padding 填充
+      margin 间距
+3、用body{}设置padding和margin为0，使边框紧密贴合主页面不留白
+-->
