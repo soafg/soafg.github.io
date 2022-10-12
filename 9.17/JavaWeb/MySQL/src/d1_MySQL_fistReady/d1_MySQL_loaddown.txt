@@ -1,0 +1,24 @@
+1、安装MySQL安装包   MySQL :: Download MySQL Community Server 我安装的是5.7.39版本
+2、设置环境变量添加文件安装的根目录到MySQL__HOME下，并在PATH下添加路径%MySQL__HOME%\bin
+3、设置my.ini配置文件到根目录下、并且要以管理员身份运行cmd.exe才有权限注册MySQL，C盘->windows->System32->查找cmd
+4、cd 到根目录bin包下、输入mysqld --initialize-insecure  如果不报错在根目录下会有一个新的date包
+5、继续输入 mysqld -install 启动MySQL 成功会有 Succeeded install字样出现
+6、可以通过 services.msc 查看本地服务情况,并使MySQL自行启动
+7、也可以通过 net start mysql 启动  net stop mysql  禁用
+8、通过管理员权限可以强行改MySQL初始密码为1234   mysqladmin  -u root password 1234
+9、最后登录  mysql -uroot -p1234 看到welcome就说明进去了
+10、退出 exit  或者  quit 都行
+11、可以链接别人的MySQL  mysql -u用户名 -p密码  -h要连接的MySQL的ip地址（默认本地地址127.0.0.1） -p要连接的端口号（默认3306）
+12、正常来说一句mysql语句以；为结尾  show databases；且不区分大小写，不过建议还是要书写规范
+13、注释有三种：  # 注释      -- 注释（这里--后面一定要接空格）   /*注释*/
+14、MySQL 结构其实是一个二维表：   
+                                 数据
+                       数据表
+                                  数据
+             数据库                数据
+                       数据表
+                                  数据
+15、分四种：   DDL:操作数据库、表等
+              DML：对表中的数据进行增删改
+              DQL:对表中的数据进行查询
+              DCL:对数据库进行权限控制

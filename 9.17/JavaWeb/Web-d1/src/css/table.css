@@ -1,0 +1,40 @@
+body{/*主页面*/
+    margin: 0;
+    padding: 0;
+    background: blanchedalmond;
+}
+div{/*定义盒子类都是一主页为夫*/
+    position: relative;
+    float: left;
+}
+#outside{/*大长条页*/
+    width: 80%;
+    height: 100%;
+    border: cornflowerblue 2px solid;
+    margin-left: 10%;
+    float: left;
+    border-radius: 28px;
+    background: darkcyan;
+}
+#layout{/*table外包的一层盒子*/
+    width: 100%;
+    border: 0px black solid;
+}
+ #boxSide{/*table修饰*/
+     width: 80%;
+     line-height: 28px;
+     margin-left:10% ;
+     margin-top: 280px;
+ }
+#boxSide,#boxSide tr,#boxSide td,#boxSide th{ /*table内的元素都修饰*/
+    border-collapse: collapse;/*将框边都合并*/
+    text-align: center;/*文字居中*/
+    border:black 1px solid;/*框边*/
+    font-family: 楷体;
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+.w16{
+    width: 16.6%;
+}

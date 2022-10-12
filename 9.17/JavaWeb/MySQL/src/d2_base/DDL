@@ -1,0 +1,22 @@
+1、DDL常用命令 
+        操作数据库、表等
+        1)show databases;  查看当前的已有的数据库
+        2)creat database 数据库名字;  或者 creat database if not exists 数据库名字;  创建数据库 (前面一个如果已经存在就会报错,后面会先判断再决定)
+        3)drop database 数据库名字;  或者  drop database if exists 数据库名字；    删除数据库 同理
+        4)use  数据库名字; 使用数据库
+        5)select database(); 查看当前所使用的数据库
+        6)creat table 表格名字();里面的变量用 , 隔开 例如：
+            creat table layout (
+                id int,
+                name varchar(1o), //这里的意思是输入名字长度不能超过10个字
+                gender char,
+                stauts tinyint     //最后一个变量不用逗号
+            );
+        7)desc  表格名字; 表示查看表格
+        8)show tables; 查看当前数据库下已有的表格
+        9)alter table:修改表格   
+                          alter table 旧表格名字 rename to 新名字;  换名
+                          alter table 表名 add  列名 数据类型; 添加一行新的
+                          alter table 表名 modify 列名  新数据类型;  更换某列的数据类型
+                          alter table 表名 change 列名  新列名 新数据类型; 修改某列的名字和数据类型
+                          alter table 表名 drop 列名; 删除某列

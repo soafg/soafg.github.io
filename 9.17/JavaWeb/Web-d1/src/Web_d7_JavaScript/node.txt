@@ -1,0 +1,12 @@
+1、CSS
+  1） 用作与页面的显示的美观、风格
+  2）标签样式：类样式（.name class=""）ID样式（#name id=""）标签样式（name 直接使用）
+     组合样式：嵌入式样式表、内部样式表、外部样式表
+  3)盒子模型：就是div标签。
+  4）定位和浮动：position relative/absolute相对和绝对定位、float浮动向左或者右移动
+
+2、JS
+  1）JS是客服端（浏览器端）运行的脚本语言，语法风格类似JAVA
+  2）JS是弱类型语言 var name =  ;接什么都行
+  3）JS的函数： function  name (){ }没有修饰符，没有返回值，当函数体内有return就有返回
+

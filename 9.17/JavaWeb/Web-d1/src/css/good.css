@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: dimgray;
+}
+div{
+    position: relative;
+    float:left;
+}
+#outtest{/*大长条页面*/
+   width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    border: 2px black solid;
+    background-color: burlywood;
+    border-radius: 28px;
+}
+#tableside{/*外包的盒子*/
+     width: 100%;
+    border: 0px black solid;
+}
+#table{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 200px;
+    line-height: 28px;/*设置框框高度*/
+}
+#table,#table tr,#table td,#table th{
+    border: 2px black solid;
+    border-collapse: collapse;/*边框合并*/
+    text-align: center;/*文字居中*/
+    font-family: 楷体;/*更换字体*/
+    font-size: 20px;/*字体的大小*/
+    font-weight: lighter;
+}
+.bot{
+     width: 75px;
+     height: 24px;
+
+}
+#out2{
+    width: 100%;
+    float: left;
+}
+#table2{
+    margin-left: 35%;
+}
+
